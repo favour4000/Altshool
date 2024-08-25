@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup</title>
+    <link rel="stylesheet" href="Css/form.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home page</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="container">
+      <h1>Signup</h1>
+      <form action="submit_form.php" method="post">
+        <label for="first-name">First Name:</label>
+        <input type="text" id="first-name" name="first_name" placeholder="Enter first name" required />
+
+        <label for="Lastname">Last name</label>
+            <input type="text" id="Lastname" name="Lastname" placeholder=" Enter last name" required>
+       
+        <label for="gender">Gender:</label>
+        <select class="inputs" id="gender" name="gender" >
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+
+          <label for="dob">Date of Birth</label>
+            <input class="inputs" type="date" id="dob" name="dob" />
+
+            <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" placeholder="Enter email address" required />
+  
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="08154387000"  />
+
+        <label for="Country"> Country</label>
+            <input type="text" id="Country" name="Countries" placeholder="Select your country" required />
+
+            <label for="State/CityofResidence">State/City of Residence</label >
+                <input type="text" id="State/CityofResidence" name="City/StateofResidencess" placeholder="Enter your state of residence" required />
+
+                <label for="Howdidyouhearaboutus?">How did you hear about us?</label>
+            <input type="text" id="Howdidyouhearaboutus?" name="Howdidyouhearaboutus?" required />
+
+            <label for="Password">Password</label>
+            <input class="inputs" type="text" id="Password" name="Password" placeholder="Enter password" required />
+
+            <label for="ConfirmPassword">Confirm Password</label>
+            <input type="text" id="ConfirmPassword" name="Confirm Password" placeholder="Enter password again" required />
+
+            <p>
+                By clicking continue, I agree to
+                <a class="home" href="TermsofUse">Terms of Use</a> and acknowledge
+                that I have read the
+                <a class="home" href="PrivacyPolicy">termsPrivacy Policy.</a>
+              </p>
+        <button type="submit">Submit Application</button>
+      </form>
+    </div>
+  </body>
+</html>
